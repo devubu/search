@@ -45,8 +45,8 @@ Scripts for searching text for Linux and Windows.
 
 ## Install Packages on Kali
 
-    apt install -y fzf
-    apt install -y ripgrep
+    sudo apt install -y fzf
+    sudo apt install -y ripgrep
     sudo apt install -y fd-find
     sudo apt install -y bat
     mkdir -p ~/.local/bin
