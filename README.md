@@ -1,5 +1,5 @@
 # search
-Scripts for searching text.
+Scripts for searching text for Linux and Windows.
 
 ## Installation
 
