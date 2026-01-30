@@ -7,10 +7,10 @@ Scripts for searching text for Linux and Windows.
 
 ## Tools
 
-[fzf](https://github.com/junegunn/fzf)
-[ripgrep](https://github.com/BurntSushi/ripgrep)
-[fd](https://github.com/sharkdp/fd)
-[bat](https://github.com/sharkdp/bat)
+- [fzf](https://github.com/junegunn/fzf)
+- [ripgrep](https://github.com/BurntSushi/ripgrep)
+- [fd](https://github.com/sharkdp/fd)
+- [bat](https://github.com/sharkdp/bat)
 
 ## gfzf (interactive search for text)
 
