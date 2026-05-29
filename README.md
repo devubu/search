@@ -169,25 +169,31 @@ Scripts for searching text for Linux and Windows.
     function cbat {
         bat --paging=never @Args
     }
-
+    
     function bfzf {
         fzf --preview="bat --color=always {}"
     }
     
-    function ffzf {
-        fd . -a -uu -t f | fzf --preview="bat --color=always {}"
+    function cdfzf {
+        param([string]$Path = ".")
+    
+        $selected_dir = fd -a -uu -t d . $Path | fzf
+    
+        if ($selected_dir) {
+            Set-Location $selected_dir
+        }
     }
     
+    function ffzf {
+        param([string]$Path = ".")
     
-    function gfzf {
-        $reload = 'reload:rg -uuu --column --color=always --smart-case {q} || :'
+        fd -a -uu -t f . $Path | fzf --preview='bat --color=always {}'
+    }
     
-        fzf --disabled --ansi `
-            --bind "start:$reload" `
-            --bind "change:$reload" `
-            --delimiter ":" `
-            --preview 'bat --style=numbers --color=always --highlight-line {2} {1}' `
-            --preview-window "+{2}/2"
+    function dfzf {
+        param([string]$Path = ".")
+    
+        fd -a -uu -t d . $Path | fzf --preview 'dir /a --color=always {}' --preview-window='~4,+{2}+4/3,<80(up),wrap'
     }
     
     function copy {
