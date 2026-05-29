@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
 # Interactive search and open with fzf, rg, bat, and nvim
-RELOAD='reload:rg -uuu --column --color=always --smart-case {q} || :'
+TARGET_PATH="${1:-.}"
+
+RELOAD="reload:rg -uu --column --color=always --smart-case {q} \"$TARGET_PATH\" || :"
 
 fzf --disabled --ansi \
     --bind "start:$RELOAD" --bind "change:$RELOAD" \

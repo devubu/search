@@ -89,40 +89,41 @@ Scripts for searching text for Linux and Windows.
 
 ## Download Prebuilt Binaries on Kali
 
-    mkdir -p ~/Tools/fzf/v0.65.2/linux/amd64
-    mkdir -p ~/Tools/fzf/v0.65.2/windows/amd64
-    curl -o ~/Tools/fzf/v0.65.2/linux/amd64/fzf-0.65.2-linux_amd64.tar.gz -L https://github.com/junegunn/fzf/releases/download/v0.65.2/fzf-0.65.2-linux_amd64.tar.gz
-    tar -xzvf ~/Tools/fzf/v0.65.2/linux/amd64/fzf-0.65.2-linux_amd64.tar.gz -C ~/Tools/fzf/v0.65.2/linux/amd64 fzf && rm ~/Tools/fzf/v0.65.2/linux/amd64/fzf-0.65.2-linux_amd64.tar.gz
-    curl -o ~/Tools/fzf/v0.65.2/windows/amd64/fzf-0.65.2-windows_amd64.zip -L https://github.com/junegunn/fzf/releases/download/v0.65.2/fzf-0.65.2-windows_amd64.zip
-    unzip ~/Tools/fzf/v0.65.2/windows/amd64/fzf-0.65.2-windows_amd64.zip fzf.exe -d ~/Tools/fzf/v0.65.2/windows/amd64 && rm ~/Tools/fzf/v0.65.2/windows/amd64/fzf-0.65.2-windows_amd64.zip
+    mkdir -p ~/Tools/fzf/v0.72.0/linux/amd64
+    mkdir -p ~/Tools/fzf/v0.72.0/windows/amd64
+    curl -o ~/Tools/fzf/v0.72.0/linux/amd64/fzf-0.72.0-linux_amd64.tar.gz -L https://github.com/junegunn/fzf/releases/download/v0.72.0/fzf-0.72.0-linux_amd64.tar.gz
+    tar -xzvf ~/Tools/fzf/v0.72.0/linux/amd64/fzf-0.72.0-linux_amd64.tar.gz -C ~/Tools/fzf/v0.72.0/linux/amd64 fzf && rm ~/Tools/fzf/v0.72.0/linux/amd64/fzf-0.72.0-linux_amd64.tar.gz
+    curl -o ~/Tools/fzf/v0.72.0/windows/amd64/fzf-0.72.0-windows_amd64.zip -L https://github.com/junegunn/fzf/releases/download/v0.72.0/fzf-0.72.0-windows_amd64.zip
+    unzip ~/Tools/fzf/v0.72.0/windows/amd64/fzf-0.72.0-windows_amd64.zip fzf.exe -d ~/Tools/fzf/v0.72.0/windows/amd64 && rm ~/Tools/fzf/v0.72.0/windows/amd64/fzf-0.72.0-windows_amd64.zip
 
-    mkdir -p ~/Tools/ripgrep/v14.1.1/linux/x86_64
-    mkdir -p ~/Tools/ripgrep/v14.1.1/windows/x86_64
-    curl -o ~/Tools/ripgrep/v14.1.1/linux/x86_64/ripgrep-14.1.1-x86_64-unknown-linux-musl.tar.gz -L https://github.com/BurntSushi/ripgrep/releases/download/14.1.1/ripgrep-14.1.1-x86_64-unknown-linux-musl.tar.gz
-    tar -xzvf ~/Tools/ripgrep/v14.1.1/linux/x86_64/ripgrep-14.1.1-x86_64-unknown-linux-musl.tar.gz -C ~/Tools/ripgrep/v14.1.1/linux/x86_64 --strip-components=1 ripgrep-14.1.1-x86_64-unknown-linux-musl/rg && rm ~/Tools/ripgrep/v14.1.1/linux/x86_64/ripgrep-14.1.1-x86_64-unknown-linux-musl.tar.gz
-    curl -o ~/Tools/ripgrep/v14.1.1/windows/x86_64/ripgrep-14.1.1-x86_64-pc-windows-msvc.zip -L https://github.com/BurntSushi/ripgrep/releases/download/14.1.1/ripgrep-14.1.1-x86_64-pc-windows-msvc.zip
-    unzip -j ~/Tools/ripgrep/v14.1.1/windows/x86_64/ripgrep-14.1.1-x86_64-pc-windows-msvc.zip ripgrep-14.1.1-x86_64-pc-windows-msvc/rg.exe -d ~/Tools/ripgrep/v14.1.1/windows/x86_64 && rm ~/Tools/ripgrep/v14.1.1/windows/x86_64/ripgrep-14.1.1-x86_64-pc-windows-msvc.zip
+    mkdir -p ~/Tools/ripgrep/v15.1.0/linux/x86_64
+    mkdir -p ~/Tools/ripgrep/v15.1.0/windows/x86_64
+    curl -o ~/Tools/ripgrep/v15.1.0/linux/x86_64/ripgrep-15.1.0-x86_64-unknown-linux-musl.tar.gz -L https://github.com/BurntSushi/ripgrep/releases/download/15.1.0/ripgrep-15.1.0-x86_64-unknown-linux-musl.tar.gz
+    tar -xzvf ~/Tools/ripgrep/v15.1.0/linux/x86_64/ripgrep-15.1.0-x86_64-unknown-linux-musl.tar.gz -C ~/Tools/ripgrep/v15.1.0/linux/x86_64 --strip-components=1 ripgrep-15.1.0-x86_64-unknown-linux-musl/rg && rm ~/Tools/ripgrep/v15.1.0/linux/x86_64/ripgrep-15.1.0-x86_64-unknown-linux-musl.tar.gz
+    curl -o ~/Tools/ripgrep/v15.1.0/windows/x86_64/ripgrep-15.1.0-x86_64-pc-windows-msvc.zip -L https://github.com/BurntSushi/ripgrep/releases/download/15.1.0/ripgrep-15.1.0-x86_64-pc-windows-msvc.zip
+    unzip -j ~/Tools/ripgrep/v15.1.0/windows/x86_64/ripgrep-15.1.0-x86_64-pc-windows-msvc.zip ripgrep-15.1.0-x86_64-pc-windows-msvc/rg.exe -d ~/Tools/ripgrep/v15.1.0/windows/x86_64 && rm ~/Tools/ripgrep/v15.1.0/windows/x86_64/ripgrep-15.1.0-x86_64-pc-windows-msvc.zip
 
-    mkdir -p ~/Tools/fd/v10.3.0/linux/x86_64
-    mkdir -p ~/Tools/fd/v10.3.0/windows/x86_64
-    curl -o ~/Tools/fd/v10.3.0/linux/x86_64/fd-v10.3.0-x86_64-unknown-linux-musl.tar.gz -L https://github.com/sharkdp/fd/releases/download/v10.3.0/fd-v10.3.0-x86_64-unknown-linux-musl.tar.gz
-    tar -xzvf ~/Tools/fd/v10.3.0/linux/x86_64/fd-v10.3.0-x86_64-unknown-linux-musl.tar.gz -C ~/Tools/fd/v10.3.0/linux/x86_64 --strip-components=1 fd-v10.3.0-x86_64-unknown-linux-musl/fd && rm ~/Tools/fd/v10.3.0/linux/x86_64/fd-v10.3.0-x86_64-unknown-linux-musl.tar.gz
-    curl -o ~/Tools/fd/v10.3.0/windows/x86_64/fd-v10.3.0-x86_64-pc-windows-msvc.zip -L https://github.com/sharkdp/fd/releases/download/v10.3.0/fd-v10.3.0-x86_64-pc-windows-msvc.zip
-    unzip -j ~/Tools/fd/v10.3.0/windows/x86_64/fd-v10.3.0-x86_64-pc-windows-msvc.zip fd-v10.3.0-x86_64-pc-windows-msvc/fd.exe -d ~/Tools/fd/v10.3.0/windows/x86_64 && rm ~/Tools/fd/v10.3.0/windows/x86_64/fd-v10.3.0-x86_64-pc-windows-msvc.zip
+    mkdir -p ~/Tools/fd/v10.4.2/linux/x86_64
+    mkdir -p ~/Tools/fd/v10.4.2/windows/x86_64
+    curl -o ~/Tools/fd/v10.4.2/linux/x86_64/fd-v10.4.2-x86_64-unknown-linux-musl.tar.gz -L https://github.com/sharkdp/fd/releases/download/v10.4.2/fd-v10.4.2-x86_64-unknown-linux-musl.tar.gz
+    tar -xzvf ~/Tools/fd/v10.4.2/linux/x86_64/fd-v10.4.2-x86_64-unknown-linux-musl.tar.gz -C ~/Tools/fd/v10.4.2/linux/x86_64 --strip-components=1 fd-v10.4.2-x86_64-unknown-linux-musl/fd && rm ~/Tools/fd/v10.4.2/linux/x86_64/fd-v10.4.2-x86_64-unknown-linux-musl.tar.gz
+    curl -o ~/Tools/fd/v10.4.2/windows/x86_64/fd-v10.4.2-x86_64-pc-windows-msvc.zip -L https://github.com/sharkdp/fd/releases/download/v10.4.2/fd-v10.4.2-x86_64-pc-windows-msvc.zip
+    unzip -j ~/Tools/fd/v10.4.2/windows/x86_64/fd-v10.4.2-x86_64-pc-windows-msvc.zip fd-v10.4.2-x86_64-pc-windows-msvc/fd.exe -d ~/Tools/fd/v10.4.2/windows/x86_64 && rm ~/Tools/fd/v10.4.2/windows/x86_64/fd-v10.4.2-x86_64-pc-windows-msvc.zip
 
-    mkdir -p ~/Tools/bat/v0.25.0/linux/x86_64
-    mkdir -p ~/Tools/bat/v0.25.0/windows/x86_64
-    curl -o ~/Tools/bat/v0.25.0/linux/x86_64/bat-v0.25.0-x86_64-unknown-linux-musl.tar.gz -L https://github.com/sharkdp/bat/releases/download/v0.25.0/bat-v0.25.0-x86_64-unknown-linux-musl.tar.gz
-    tar -xzvf ~/Tools/bat/v0.25.0/linux/x86_64/bat-v0.25.0-x86_64-unknown-linux-musl.tar.gz -C ~/Tools/bat/v0.25.0/linux/x86_64 --strip-components=1 bat-v0.25.0-x86_64-unknown-linux-musl/bat && rm ~/Tools/bat/v0.25.0/linux/x86_64/bat-v0.25.0-x86_64-unknown-linux-musl.tar.gz
-    curl -o  ~/Tools/bat/v0.25.0/windows/x86_64/bat-v0.25.0-x86_64-pc-windows-msvc.zip -L https://github.com/sharkdp/bat/releases/download/v0.25.0/bat-v0.25.0-x86_64-pc-windows-msvc.zip
-    unzip -j ~/Tools/bat/v0.25.0/windows/x86_64/bat-v0.25.0-x86_64-pc-windows-msvc.zip bat-v0.25.0-x86_64-pc-windows-msvc/bat.exe -d ~/Tools/bat/v0.25.0/windows/x86_64 && rm ~/Tools/bat/v0.25.0/windows/x86_64/bat-v0.25.0-x86_64-pc-windows-msvc.zip
+    mkdir -p ~/Tools/bat/v0.26.1/linux/x86_64
+    mkdir -p ~/Tools/bat/v0.26.1/windows/x86_64
+    curl -o ~/Tools/bat/v0.26.1/linux/x86_64/bat-v0.26.1-x86_64-unknown-linux-musl.tar.gz -L https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-x86_64-unknown-linux-musl.tar.gz
+    tar -xzvf ~/Tools/bat/v0.26.1/linux/x86_64/bat-v0.26.1-x86_64-unknown-linux-musl.tar.gz -C ~/Tools/bat/v0.26.1/linux/x86_64 --strip-components=1 bat-v0.26.1-x86_64-unknown-linux-musl/bat && rm ~/Tools/bat/v0.26.1/linux/x86_64/bat-v0.26.1-x86_64-unknown-linux-musl.tar.gz
+    curl -o ~/Tools/bat/v0.26.1/windows/x86_64/bat-v0.26.1-x86_64-pc-windows-msvc.zip -L https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-x86_64-pc-windows-msvc.zip
+    unzip -j ~/Tools/bat/v0.26.1/windows/x86_64/bat-v0.26.1-x86_64-pc-windows-msvc.zip bat-v0.26.1-x86_64-pc-windows-msvc/bat.exe -d ~/Tools/bat/v0.26.1/windows/x86_64 && rm ~/Tools/bat/v0.26.1/windows/x86_64/bat-v0.26.1-x86_64-pc-windows-msvc.zip
+
 
 ## Host Linux Prebuilt Binaries and gfzf.sh on Kali
 
-    python3 -m http.server 80 -d ~/Tools/fzf/v0.65.2/linux/amd64
-    python3 -m http.server 80 -d ~/Tools/ripgrep/v14.1.1/linux/x86_64
-    python3 -m http.server 80 -d ~/Tools/fd/v10.3.0/linux/x86_64
-    python3 -m http.server 80 -d ~/Tools/bat/v0.25.0/linux/x86_64
+    python3 -m http.server 80 -d ~/Tools/fzf/v0.72.0/linux/amd64
+    python3 -m http.server 80 -d ~/Tools/ripgrep/v15.1.0/linux/x86_64
+    python3 -m http.server 80 -d ~/Tools/fd/v10.4.2/linux/x86_64
+    python3 -m http.server 80 -d ~/Tools/bat/v0.26.1/linux/x86_64
     python3 -m http.server 80 -d ~/Tools/Custom/Bash/search
 
 ## Download Linux Prebuilt binaries and gfzf.sh on Linux Target
@@ -143,10 +144,10 @@ Scripts for searching text for Linux and Windows.
 
 ## Host Windows Prebuilt Binaries on Kali
 
-    python3 -m http.server 80 -d ~/Tools/fzf/v0.65.2/windows/amd64
-    python3 -m http.server 80 -d ~/Tools/ripgrep/v14.1.1/windows/x86_64
-    python3 -m http.server 80 -d ~/Tools/fd/v10.3.0/windows/x86_64
-    python3 -m http.server 80 -d ~/Tools/bat/v0.25.0/windows/x86_64
+    python3 -m http.server 80 -d ~/Tools/fzf/v0.72.0/windows/amd64
+    python3 -m http.server 80 -d ~/Tools/ripgrep/v15.1.0/windows/x86_64
+    python3 -m http.server 80 -d ~/Tools/fd/v10.4.2/windows/x86_64
+    python3 -m http.server 80 -d ~/Tools/bat/v0.26.1/windows/x86_64
 
 ## Download Windows Prebuilt Binaries on Windows Target
 
@@ -174,7 +175,7 @@ Scripts for searching text for Linux and Windows.
     }
     
     function ffzf {
-        fd . -a -u -t f | fzf --preview="bat --color=always {}"
+        fd . -a -uu -t f | fzf --preview="bat --color=always {}"
     }
     
     

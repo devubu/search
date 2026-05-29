@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
 # Interactive grep using rg, fzf, and bat
-RELOAD='reload:rg -uuu --column --color=always --smart-case {q} || :'
+TARGET_DIR="${1:-.}"
+
+RELOAD="reload:rg -uu --column --color=always --smart-case {q} \"$TARGET_DIR\" || :"
 
 fzf --disabled --ansi \
     --bind "start:$RELOAD" --bind "change:$RELOAD" \
